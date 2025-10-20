@@ -1,6 +1,6 @@
 #include <stdio.h>
 /*
- * simple command that print \"Preogramming is like a multilingual puzzle\" to the user
+ * main-entry point
  */
 int main(void)
 {
