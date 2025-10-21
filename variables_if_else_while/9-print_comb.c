@@ -10,7 +10,7 @@ int main(void)
 
 	for (order = 0; order <= 9; order++)
 	{
-		putchar(order + 0);
+		putchar(order + '0');
 		if (order != 9)
 		{
 			putchar(',');
