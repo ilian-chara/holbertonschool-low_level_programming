@@ -8,7 +8,7 @@ int main(void)
 {
 	int f;
 
-	for (f = 0; f <= 100; f++)
+	for (f = 1; f <= 100; f++)
 	{
 		if (f % 3 == 0 && f % 5 == 0)
 		{
@@ -25,6 +25,10 @@ int main(void)
 		else
 		{
 			printf("%d", f);
+		}
+		if (f != 100)
+		{
+			putchar(' ');
 		}
 	}
 	return (0);
