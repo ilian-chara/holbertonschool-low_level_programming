@@ -6,7 +6,7 @@
  * Return: dest value
  */
 
-char *_strcat(char *dest, char *src);
+char *_strcat(char *dest, char *src)
 {
 	int r = 0;
 	int t = 0;
@@ -15,9 +15,9 @@ char *_strcat(char *dest, char *src);
 		r++;
 	while (src[t] != '\0')
 	{
-		dest[r] = src[t]
-			t++
-			r++
+		dest[r] = src[t];
+			t++;
+			r++;
 	}
 	dest[r] = '\0';
 	return (dest);
