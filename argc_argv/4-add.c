@@ -9,13 +9,13 @@
 
 int main(int argc, char *argv[])
 {
+	int s = 0, n, e;
+
 	if (argc == 1)
 	{
 	printf("0\n");
 	return (0);
 	}
-int e, s, n;
-
 	for (e = 1; e < argc; e++)
 	{
 		n = atoi(argv[e]);
