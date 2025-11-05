@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 /**
 * main - make addition
 * @argc: lenght of argv
@@ -10,6 +11,7 @@
 int main(int argc, char *argv[])
 {
 	int s = 0, n, e;
+	int i;
 
 	if (argc == 1)
 	{
@@ -18,16 +20,17 @@ int main(int argc, char *argv[])
 	}
 	for (e = 1; e < argc; e++)
 	{
-		n = atoi(argv[e]);
-
-		if (n <= 0 && argv[e][0] != '0')
+		for (i = 0; argv[e][i] != '\0'; i++)
+		{
+		if (!isdigit((unsigned char)argv[e][i]))
 		{
 			printf("Error\n");
 			return (1);
 		}
-		s += n;
+	}
+	n = atoi(argv[e]);
+	s += n;
 	}
 	printf("%d\n", s);
-
 	return (0);
 }
