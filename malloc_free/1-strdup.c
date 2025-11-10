@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
-*
-*
-*
+* _strdup - copy a string with new malloc
+* @str: original from copy
+* Return: NULL if there's no memory. else, return cp
 */
 
 char *_strdup(char *str)
