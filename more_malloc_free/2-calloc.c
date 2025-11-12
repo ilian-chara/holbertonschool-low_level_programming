@@ -3,7 +3,7 @@
 /**
 * _calloc - allocate memory and create an array
 * @size: number of bytes
-* @nmemb the array
+* @nmemb: the array
 * Return: error if null else the array
 */
 
